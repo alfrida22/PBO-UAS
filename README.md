@@ -1,1 +1,6 @@
-# PBO-UAS
+Penjelasan Script
+1. Animal adalah kelas superclass yang merepresentasikan hewan yang memiliki atribut name digunakan untuk menyimpan nama hewan, dan metode-metode getName() untuk mengakses nama hewan, dan makeSound() yang mencetak suara umum hewan.
+2. Cat adalah subclass dari Animal yang mewarisi atribut dan metode dari kelas Animal. Subclass Ini memiliki konstruktor yang menerima parameter nama hewan dan menginisialisasi atribut name. Selain itu, itu melakukan override (menimpa) metode makeSound() untuk mencetak suara kucing.
+3. Dog adalah subclass lain dari Animal yang juga mewarisi atribut dan metode dari kelas Animal. Subclass ini memiliki konstruktor yang menerima parameter nama hewan dan menginisialisasi atribut name. Disini juga melakukan override metode makeSound() untuk mencetak suara anjing.
+4. Main adalah kelas utama sebagai titik masuk program. Di dalam metode main(), membuat objek animal1 dari kelas Cat dengan nama "Kitty" dan objek animal2 dari kelas Dog dengan nama "Buddy".
+5. Di dalam blok try ini, memanggil metode makeSound() pada objek animal1 dan animal2. Karena keduanya adalah objek polymorphic dari tipe Animal, metode yang dipanggil adalah metode yang ditentukan di subclass sesuai dengan jenis objek yang sebenarnya.
